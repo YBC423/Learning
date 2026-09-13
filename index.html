@@ -9,8 +9,13 @@
   <button>Click me</button>
   <p id="mood">mood: Happy</p>
 <script>
+   let mood = ["Happy", "Excited", "DJ 6ixe", "Coding", "Youger"};
+   let i = 0;
+   
   document.querySelector("button").onclick = function() {
-     document.getElementById("mood").innerHTML = "mood: Excited";
+   i = i + 1;
+     if(i >= moods.length) i = 0;
+     document.getElementById("mood").innerHTML = "Excited: " + moods[i];
   }
 </script>
 </body>
