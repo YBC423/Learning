@@ -31,12 +31,14 @@
   <p id="mood">mood: Happy</p>
 <script>
    let moods = ["Happy", "Excited", "DJ 6ixe", "Coding", "Younger"];
+   let colors = ["#FFD700", "#ff00ff", "#9b59b6", "#2ecc71", "#3498db"];
    let i = 0;
    
   document.querySelector("button").onclick = function() {
    i = i + 1;
      if(i >= moods.length) i = 0;
      document.getElementById("mood").innerHTML = "mood: " + moods[i];
+     document.getElementById("mood").style.color = colors[i];
   }
 </script>
 </body>
